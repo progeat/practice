@@ -4,14 +4,13 @@ import { Navigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { server } from '../../bff';
 import { AuthFormError, Button, H2, Input } from '../../components';
 import { useResetForm } from '../../hooks';
 import { setUser } from '../../actions';
 import { selectUserRole } from '../../selectors';
+import { request } from '../../utils';
 import { ROLE } from '../../constants';
 import styled from 'styled-components';
-import { request } from '../../utils';
 
 const regFormSchema = yup.object().shape({
 	login: yup

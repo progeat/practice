@@ -42,6 +42,12 @@ export const Blog = () => {
 		);
 	}, [dispatch]);
 
+	// useLayoutEffect(() => {
+	// 	fetch('/posts')
+	// 		.then((res) => res.json())
+	// 		.then((res) => console.log('layout', res));
+	// }, []);
+
 	return (
 		<AppColumn>
 			<Header />
