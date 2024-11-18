@@ -10,7 +10,7 @@ const SearchContainer = ({ className, searchPhrase, onChange }) => {
 				placeholder="Поиск по заголовкам..."
 				onChange={onChange}
 			/>
-			<Icon inactive={true} id="fa-search" size="21px" />
+			<Icon inactive="true" id="fa-search" size="21px" />
 		</div>
 	);
 };

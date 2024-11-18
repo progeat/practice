@@ -19,5 +19,5 @@ export const Icon = styled(IconContainer)`
 
 Icon.propTypes = {
 	id: PropTypes.string.isRequired,
-	inactive: PropTypes.bool,
+	inactive: PropTypes.string,
 };

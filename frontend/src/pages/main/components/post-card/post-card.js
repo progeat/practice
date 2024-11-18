@@ -20,7 +20,7 @@ const PostCardContainer = ({
 					<div className="post-card-info">
 						<div className="published-at">
 							<Icon
-								inactive={true}
+								inactive="true"
 								id="fa-calendar-o"
 								margin="0 7px 0 0"
 								size="18px"
@@ -29,7 +29,7 @@ const PostCardContainer = ({
 						</div>
 						<div className="comments-count">
 							<Icon
-								inactive={true}
+								inactive="true"
 								id="fa-comment-o"
 								margin="0 7px 0 0"
 								size="18px"
