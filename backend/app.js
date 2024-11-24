@@ -1,4 +1,4 @@
-// require('dotenv').config();
+require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -15,12 +15,8 @@ app.use(express.json());
 
 app.use('/api', routes);
 
-mongoose
-  .connect(
-    'mongodb+srv://progeat:silviaS2000@clustertest.vfynt.mongodb.net/blog?retryWrites=true&w=majority&appName=ClusterTest'
-  )
-  .then(() => {
-    app.listen(port, () => {
-      console.log(`Server started on port ${port}`);
-    });
+mongoose.connect(process.env.DB_CONNECTION_STRING).then(() => {
+  app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
   });
+});
