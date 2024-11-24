@@ -58,6 +58,12 @@ export const Comments = styled(CommentsContainer)`
 	margin: 0 auto;
 	width: 580px;
 
+	& .comments {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
 	& .new-comment {
 		display: flex;
 		width: 100%;
